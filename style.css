@@ -1,0 +1,133 @@
+:root {
+	--casi-blanco: #efe;
+	--main-background: #6a8;
+	--verde-selva: #1b4332;
+	--texto: #2d2d2d;
+	--cafe: #864;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: inter;
+	line-height: 1.6;
+	color: var(--texto);
+	background-color: var(--main-background);
+}
+
+header {
+	background-color: var(--casi-blanco);
+	padding: 1rem 5%;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#nombre {
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: var(--verde-selva);
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+nav ul li {
+	margin-left: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--verde-selva);
+}
+
+#btn-nav {
+	background-color: var(--verde-selva);
+	color: var(--casi-blanco);
+	padding: 8px 20px;
+	border-radius: 50px;
+}
+
+#section1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: var(--casi-blanco);
+}
+
+#titulo h1 {
+	margin-top: 60px;
+	font-family: inter;
+	font-size: 5em;
+	font-weight: 100;
+	letter-spacing: 30px;
+}
+
+#logo {
+	height: 300px;
+	width: auto;
+	display: flex;
+	margin: 0 auto 20px;
+}
+
+#btn-main {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 35px;
+	background-color: var(--cafe);
+	color: var(--casi-blanco);
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+#section2 {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 20px 10%;
+	text-align: center;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	margin-top: 10px;
+}
+
+.card {
+	background-color: var(--casi-blanco);
+	padding: 40px;
+	border-bottom: 4px solid var(--verde-selva);
+	transition: transform 0.3s;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+footer {
+	background: var(--verde-selva);
+	color: white;
+	text-align: center;
+	padding: 20px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
